@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <title>Jojo's Website</title>
         <meta charset="utf-8"/>
@@ -12,11 +12,37 @@
         <meta property="og:url" content="https://jojocode1.github.io">
         <meta rel="shortcut icon" href="images/icon.ico">
 
-        <link rel="stylesheet" href="styles/style.css">
+        <style>
+            #project-links {
+                border: gray dashed 1px;
+                padding: 10px;
+                display: inline-block;
+                position:fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #project-links div a {
+                display: inline-block;
+                width: 150px;
+                height: 150px;
+                margin: 15px;
+                text-align: center;
+                line-height: 150px;
+                font-size: 2em;
+                text-decoration: none;
+                color: white;
+                background-color: rgb(53, 53, 53);
+            }
+            #project-links div a:hover {
+                background-color:rgb(80, 80, 80);
+            }
+        </style>
     </head>
     <body>
         <div id="project-links">
-            <a href="projects/calculator.html">Calculator</a>
+            <div><a href="github.com">Github</a><a href="#">Projects</a></div>
+            <div><a href="projects/calculator.html">Calculator</a><a href="#">Games</a></div>
         </div>
     </body>
 </html>
