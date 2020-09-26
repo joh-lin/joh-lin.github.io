@@ -10,39 +10,55 @@
         <meta property="og:description" content="This website is my first website to practice web developement.">
         <meta property="og:title" content="Jojo's Website">
         <meta property="og:url" content="https://jojocode1.github.io">
-        <meta rel="shortcut icon" href="images/icon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+        <!--<link rel="icon" type="image/icon" href="/images/icon.icon">
+        <link rel="favicon" type="image/jpg" href="/images/icon.jpg">-->
+        <link rel="stylesheet" href="styles/style.css">
 
         <style>
-            #project-links {
+            html {
+                font-family: Roboto;
+            }
+            .project-links {
+                margin: 20% auto;
                 border: gray dashed 1px;
-                padding: 10px;
-                display: inline-block;
-                position:fixed;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
+                width: 40%;
+                height: min-content;
+                font-size: 3.5em;
+                font-weight: 500;
             }
-            #project-links div a {
-                display: inline-block;
-                width: 150px;
-                height: 150px;
-                margin: 15px;
+            .project-links ul {
+                list-style: none inside;
+                margin: 0;
+                padding: 0;
+            }
+            .project-links ul li {
+                background-color: #2d658a62;
                 text-align: center;
-                line-height: 150px;
-                font-size: 2em;
-                text-decoration: none;
-                color: white;
-                background-color: rgb(53, 53, 53);
+                padding: 0% 5%;
+                margin: 10px 20px;
+                transition: transform 0.1s linear;
             }
-            #project-links div a:hover {
-                background-color:rgb(80, 80, 80);
+            .project-links ul li:hover {
+                transform: scale(1.05);
+            }
+            .project-links ul li a {
+                display: inline-block;
+                color: black;
+                text-decoration: none;
+                width: 100%
             }
         </style>
     </head>
     <body>
-        <div id="project-links">
-            <div><a href="github.com">Github</a><a href="#">Projects</a></div>
-            <div><a href="projects/calculator.html">Calculator</a><a href="#">Games</a></div>
+        <div class="project-links">
+            <ul>
+                <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+                <li><a href="https://reddit.com" target="_blank">Reddit</a></li>
+                <li><a href="https://store.steampowered.com" target="_blank">Steam</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">Mozilla</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">MEMES</a></li>
+            </ul>
         </div>
     </body>
 </html>
