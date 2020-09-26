@@ -7,7 +7,12 @@
                 overflow: -moz-hidden-unscrollable;
                 background-image: url(images/sean-nani.jpeg);
                 background-size: 25%;
+                background-position-x: 1px 1px;
                 text-align: center;
+                animation-name: move-background;
+                animation-duration: 0.01s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease;
             }
             img {
                 display: block;
@@ -22,6 +27,11 @@
                 0% {transform: rotateZ(1deg);}
                 50% {transform: rotateZ(-1deg);}
                 100% {transform: rotateZ(1deg);}
+            }
+            @keyframes move-background {
+                0% {background-position: 10px 10px;}
+                50% {background-position: 0px 0px;}
+                100% {background-position: 1px 10px;}
             }
         </style>
     </head>
