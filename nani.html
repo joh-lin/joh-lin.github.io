@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html {
+                overflow: clip;
+                overflow: -moz-hidden-unscrollable;
+                background-image: url(images/sean-nani.jpeg);
+                background-size: 25%;
+                text-align: center;
+            }
+            img {
+                display: block;
+                margin: auto;
+                width: 60%;
+                animation-name: grayscale;
+                animation-duration: 0.01s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease;
+            }
+            @keyframes grayscale {
+                0% {transform: rotateZ(1deg);}
+                50% {transform: rotateZ(-1deg);}
+                100% {transform: rotateZ(1deg);}
+            }
+        </style>
+    </head>
+    <body>
+        <img style="display: block; margin: 0 auto;" alt="Roses" src="images/sean-nani.jpeg">
+    </body>
+</html>
